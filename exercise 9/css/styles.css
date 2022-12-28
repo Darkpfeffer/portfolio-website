@@ -244,35 +244,6 @@ button:active {
 
 /* CSS grid end */
 
-/* Animation start */
-
-#october-fest {
-    margin-top: 30px;
-    width: 50%;
-}
-
-@keyframes wiggle {
-    0% {
-        transform: translate(0px, 10px);
-    }
-
-    33% {
-        transform:rotate(15deg);
-    }
-
-    66% {
-        transform: rotate(-15deg);
-    }
-
-    100% {
-        transform: translate(0px, -10px);
-    }
-}
-
-#october-fest {
-    animation: 4s wiggle infinite alternate linear;
-}
-
 /* media queries start */
 
 @media all and (max-width:500px) {

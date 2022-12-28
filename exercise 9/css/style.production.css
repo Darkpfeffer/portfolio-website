@@ -249,62 +249,6 @@ button:active {
 
 /* CSS grid end */
 
-/* Animation start */
-
-#october-fest {
-    margin-top: 30px;
-    width: 50%;
-}
-
-@-webkit-keyframes wiggle {
-    0% {
-        -webkit-transform: translate(0px, 10px);
-                transform: translate(0px, 10px);
-    }
-
-    33% {
-        -webkit-transform:rotate(15deg);
-                transform:rotate(15deg);
-    }
-
-    66% {
-        -webkit-transform: rotate(-15deg);
-                transform: rotate(-15deg);
-    }
-
-    100% {
-        -webkit-transform: translate(0px, -10px);
-                transform: translate(0px, -10px);
-    }
-}
-
-@keyframes wiggle {
-    0% {
-        -webkit-transform: translate(0px, 10px);
-                transform: translate(0px, 10px);
-    }
-
-    33% {
-        -webkit-transform:rotate(15deg);
-                transform:rotate(15deg);
-    }
-
-    66% {
-        -webkit-transform: rotate(-15deg);
-                transform: rotate(-15deg);
-    }
-
-    100% {
-        -webkit-transform: translate(0px, -10px);
-                transform: translate(0px, -10px);
-    }
-}
-
-#october-fest {
-    -webkit-animation: 4s wiggle infinite alternate linear;
-            animation: 4s wiggle infinite alternate linear;
-}
-
 /* media queries start */
 
 @media all and (max-width:500px) {
