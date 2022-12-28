@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charser="utf-8">
+        <title>Contact</title>
+        <link rel="shortcut icon" href="images/favicon-32x32.png"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Add your logo here -->
+        <img src="http://via.placeholder.com/200x70" alt="logo"/>
+        <nav>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li>
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+            <h1>Contact</h1>
+        <div>
+            CareerFoundry GmbH<br>
+            Köpenicker Str. 126<br>
+            10179 Berlin<br>
+            Deutschland<br>
+            <br>
+            Tel <a href="tel:+493048492016">+49 30 4849 2016</a><br>
+            Skype <a href="skype:hello.careerfoundry">hello.careerfoundry</a><br>
+            <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a><br>
+            <a href="mailto:office@careerfoundry.com">Contact me</a>
+
+            <p>Or write me here:</p>
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">E-mail: </label>
+                <input type="email" id="contact-email" required>
+
+                <label class="standard-label">Telephone:</label>
+                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+                <label class="standard-label">Message:</label>
+                <textarea maxlength="240" required></textarea>
+                <button type="submit" value="Send message">Send Message</button>
+            </form>
+        </div>
+    <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
