@@ -258,6 +258,9 @@ body {
 /* Footer style */
 
 .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: center;
     margin-top: auto;
 }
