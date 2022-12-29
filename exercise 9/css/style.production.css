@@ -170,7 +170,37 @@ button:active {
     text-align: left;
 }
 
-/* Flexbox */
+/* Contact form start */ 
+
+#contact-text {
+    text-align: start;
+}
+
+form {
+    text-align: start;
+    border-radius: 6px;
+}
+
+#name {
+    background-color: #d9e8d8;
+}
+
+#contact-email {
+    background-color: #d9e8d8;
+}
+
+#your-message {
+    background-color: #d9e8d8;
+}
+
+#your-message {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* Contact form end */
+
+/* Flexbox start */
  
 * {
     -webkit-box-sizing: border-box;
@@ -178,6 +208,17 @@ button:active {
 }
 
 /* header style */
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
 
 .page-header {
     display: -webkit-box;
@@ -213,7 +254,10 @@ button:active {
 
 .page-footer {
     text-align: center;
+    margin-top: auto;
 }
+
+/* Flexbox end */
 
 /* start CSS grid Fallback */
 
