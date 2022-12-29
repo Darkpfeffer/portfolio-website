@@ -172,6 +172,23 @@ button:active {
     text-align: left;
 }
 
+/* Contact form start */ 
+
+#contact-text {
+    text-align: start;
+}
+
+form {
+    text-align: start;
+    border-radius: 6px;
+}
+
+#name, #contact-email, #your-message {
+    background-color: var(--bg-color);
+}
+
+/* Contact form end */
+
 /* Flexbox start */
  
 * {
