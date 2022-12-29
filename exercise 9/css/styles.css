@@ -226,6 +226,11 @@ body {
     margin-left: 10px;
 }
 
+.link-logo {
+    width: 30px;
+    height: 30px;
+}
+
 #logo {
     text-align: left; /* default */
     min-width: 30px;
