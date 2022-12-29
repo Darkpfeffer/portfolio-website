@@ -172,13 +172,19 @@ button:active {
     text-align: left;
 }
 
-/* Flexbox */
+/* Flexbox start */
  
 * {
     box-sizing: border-box;
 }
 
 /* header style */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
 .page-header {
     display: flex;
@@ -210,7 +216,10 @@ button:active {
 
 .page-footer {
     text-align: center;
+    margin-top: auto;
 }
+
+/* Flexbox end */
 
 /* start CSS grid Fallback */
 
