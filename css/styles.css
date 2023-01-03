@@ -127,13 +127,11 @@ button:active {
 }
 
 .navigation-list__item--active {
-    background-color: var(--text-color__menu--active);
-    color: var(--text-color__default);
     text-decoration: none;
 }
 
 .navigation-list__item--active:visited {
-    color: var(--text-color__default);
+    color: var(--text-color__menu);
 }
 
 /* page content style */
