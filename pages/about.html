@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+       <!-- <link rel="stylesheet" type="text/css" href="../css/style.production.css"> -->
     </head>
     <body>
         <header class="page-header">
@@ -34,14 +34,16 @@
         <div class="page-content">
             <h1 class="page-content__item">About</h1>
                 <h2>Workplaces:</h2>
-                    <table class="about-me"> 
-                        <thead>
+                    <table class="about-me table"> 
+                        <thead class="section">
                             <tr>
                                 <th scope="col">Job Title</th>
                                 <th scope="col">Company Name</th>
                                 <th scope="col">Begin Date</th>
                                 <th scope="col">End Date</th>
                             </tr>
+                        </thead>
+                        <tbody class="section">
                             <tr>
                                 <td>Kitchen Helper</td>
                                 <td>Top Cleaner GmbH.</td>
@@ -60,7 +62,7 @@
                                 <td>June 2022</td>
                                 <td>November 2022</td>
                             </tr>
-                        </thead>
+                        </tbody>
                     </table>
                 <h2>Degrees and Certifications:</h2>
                     <ul class="about-me">
@@ -90,15 +92,15 @@
                         </li>
                     </ul>
             <h2 >My experience in web development</h2>
-                <table class="about-me">
-                    <thead>
+                <table class="about-me table">
+                    <thead class="section">
                         <tr>
                             <th scope="col">Skills</th>
                             <th scope="col">Experience (since)</th>
                             <th scope="col">Level of Expertise</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="section">
                         <tr>
                             <td>HTML</td>
                             <td>2022</td>
