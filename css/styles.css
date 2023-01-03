@@ -175,6 +175,15 @@ button:active {
     text-align: left;
 }
 
+.page-content__contact {
+    text-align: left;
+}
+
+.page-content__contact-item {
+    text-align: left;
+    margin: 0;
+}
+
 /* Contact form start */ 
 
 #contact-text {
@@ -188,11 +197,8 @@ form {
 
 #name, #contact-email, #your-message {
     background-color: var(--bg-color);
-}
-
-#your-message {
-    width: 100%;
-    min-height: 100px;
+    width: 250px;
+    max-width: 250px;
 }
 
 /* Contact form end */
@@ -314,6 +320,10 @@ body {
 
     h3 {
         font-size: 16px;
+    }
+
+    #name, #contact-email, #your-message {
+        width: 180px;
     }
 }
 
