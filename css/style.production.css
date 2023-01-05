@@ -141,7 +141,7 @@ button:active {
 
 .page-content {
     display: inline-block;
-    width: 70%;
+    width: 66%;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
@@ -149,7 +149,8 @@ button:active {
     text-align: center;
     background-color: #fff;
     color: undefined;
-    padding: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
     border-left: 3px solid rgba(0, 0, 0, 0.3);
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
 }
