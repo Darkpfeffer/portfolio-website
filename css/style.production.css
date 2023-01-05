@@ -320,6 +320,11 @@ body {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+
+    .page-content__picture {
+        max-width: 120px;
+
+    }
 }
 
 @media all and (min-width:500px) and (max-width:650px) {
@@ -356,6 +361,12 @@ body {
 @media all and (max-width:450px) {
     body {
         font-size: 12px;
+    }
+
+    .page-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
     }
 }
 
