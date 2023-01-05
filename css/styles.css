@@ -143,7 +143,7 @@ button:active {
 
 .page-content {
     display: inline-block;
-    width: 70%;
+    width: 66%;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
@@ -151,7 +151,8 @@ button:active {
     text-align: center;
     background-color: var(--bg-color__content);
     color: var(--text-color);
-    padding: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
     border-left: 3px solid var(--shadow-color);
     border-bottom: 3px solid var(--shadow-color);
 }
