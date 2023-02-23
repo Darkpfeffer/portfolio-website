@@ -202,6 +202,9 @@ form {
     max-width: 250px;
 }
 
+.submit-button {
+    margin-bottom: 10px;
+}
 /* Contact form end */
 
 /* Flexbox start */
