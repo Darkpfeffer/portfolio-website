@@ -225,7 +225,11 @@ body {
     display: flex;
 }
 
-.page-header__item:last-child {
+.mobile {
+    display: none;
+}
+
+.page-header__item--nav {
     flex-grow: 1;
     text-align: right;
 }
@@ -236,7 +240,7 @@ body {
 
 .navigation-list li {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link-logo {
@@ -318,6 +322,15 @@ body {
 }
 
 @media all and (max-width: 612px) {
+    .wide-screen {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: end;
+    }
+
     .page-content__picture {
         width: 150px;
     }
