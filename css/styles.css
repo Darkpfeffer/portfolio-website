@@ -147,6 +147,7 @@ button:active {
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 125px;
     margin-bottom: var(--margin__default);
     text-align: center;
     background-color: var(--bg-color__content);
@@ -159,7 +160,7 @@ button:active {
 
 .page-content__picture {
     float: left;
-    max-width: 240px;
+    width: 240px;
     height: auto;
     margin-right: var(--margin__default);
     margin-bottom: 10px;
@@ -223,15 +224,16 @@ body {
 
 .page-header {
     display: flex;
-}
-
-.mobile {
-    display: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .page-header__item--nav {
     flex-grow: 1;
     text-align: right;
+    margin-top: 2px;
 }
 
 .navigation-list {
@@ -254,6 +256,49 @@ body {
     max-width: 70px;
     min-height: 30px;
     max-height: 70px;
+}
+
+/* Hamburger menu style */
+.mobile {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+/* Hide links inside navigation menu */
+.topnav #myLinks {
+    display: block;
+}
+
+/* Nav menu links */
+.topnav a {
+    color: var(--text-color__primary);
+    margin-top: 3px;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a:hover {
+    background: var(--text-color__menu--active);
+    color: #000;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.topnav a.logo:hover, .topnav a.icon:hover {
+    background: var(--primary-color);
 }
 
 /* Footer style */
@@ -316,8 +361,16 @@ body {
         font-size: 16px;
     }
 
+    .page-content__picture {
+        width: 150px;
+    }
+
     #name, #contact-email, #your-message {
         width: 180px;
+    }
+
+    .page-header__item--nav {
+        margin-top: 9px;
     }
 }
 
@@ -327,12 +380,44 @@ body {
     }
 
     .mobile {
-        display: flex;
+        display: block;
         justify-content: end;
     }
 
-    .page-content__picture {
-        width: 150px;
+    .page-content {
+        margin-top: 225px;
+    }
+
+    .page-header {
+        display: block;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topnav a.logo {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .last-menu__item {   
+        border-bottom: 3px solid var(--shadow-color);
+    }
+
+    .topnav a.active{
+        background: var(--text-color__menu--active);
+        color: #000;
+    }
+
+    #logo-mobile {
+        margin: 0;
+        padding: 0;  
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -343,6 +428,14 @@ body {
 
     .page-content__text {
         font-size: 12px;
+    }
+
+    .page-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 88%;
     }
 }
 
@@ -368,14 +461,6 @@ body {
     body {
         font-size: 12px;
     }
-
-    .page-content {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-left: 1%;
-        padding-right: 1%;
-        width: 88%;
-    }
 }
 
 @media all and (max-width: 373px) {
@@ -389,6 +474,17 @@ body {
 
     .page-content__picture {
         width: 100px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .page-content {
+        padding-left: 5px;  
+    }
+    
+    .page-content__picture {
+        display: flex;
+        float: none;  
     }
 }
 /* media queries end */

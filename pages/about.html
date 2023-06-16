@@ -8,32 +8,109 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <!-- Load an icon library to show hamburger menu -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
     </head>
     <body>
         <header class="page-header">
-            <img src="../images/Logo.png" alt="my logo" aria-hidden="true" class="page-header__item" id="logo">
+            <img src="../images/Logo.png" alt="my logo" aria-hidden="true" class="page-header__item wide-screen" id="logo">
             <!-- Navigation on wide screens-->
             <nav class="page-header__item--nav wide-screen">
                 <ul role="tablist" class="navigation-list">
                     <li role="presentation">
-                        <a href="index.html" role="tab" class="navigation-list__item">Home</a>
+                        <a href="../index.html" role="tab" class="navigation-list__item">Home</a>
                     </li>
                     <li role="presentation">
-                        <a href="pages/about.html" role="tab" class="navigation-list__item navigation-list__item--active">About me</a>
+                        <a href="about.html" role="tab" class="navigation-list__item navigation-list__item--active">About me</a>
                     </li>
                     <li role="presentation">
-                        <a href="pages/work.html" role="tab" class="navigation-list__item">My works</a>
+                        <a href="work.html" role="tab" class="navigation-list__item">My works</a>
                     </li>
                     <li role="presentation">
-                        <a href="pages/contact.html" role="tab" class="navigation-list__item">Contact</a>
+                        <a href="contact.html" role="tab" class="navigation-list__item">Contact</a>
                     </li>
                 </ul>
             </nav>
+            <!-- Navigation on mobile -->
+                <div class="topnav mobile">
+                    <a href="index.html" class="logo">
+                        <img src="../images/Logo.png" alt="my logo" aria-hidden="true" class="page-header__item" id="logo-mobile">
+                    </a>
+                    <div id="myLinks">
+                        <a href="../index.html" role="tab" >Home</a>
+                        <a href="about.html" role="tab" class="active">About me</a>
+                        <a href="work.html" role="tab">My works</a>
+                        <a href="contact.html" role="tab" class="last-menu__item">Contact</a>
+                    </div>
+                    <!-- Hamburger menu to toggle the nav links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
         </header>
         <div class="page-content">
             <h1 class="page-content__item">About</h1>
+            <h2 >My experience in web development</h2>
+            <table class="about-me table">
+                <thead class="section">
+                    <tr>
+                        <th scope="col">Skills</th>
+                        <th scope="col">Experience (since)</th>
+                        <th scope="col">Level of Expertise</th>
+                    </tr>
+                </thead>
+                <tbody class="section">
+                    <tr>
+                        <td>HTML</td>
+                        <td>2022</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>2022</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>2023</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>2023</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Degrees and Certifications:</h2>
+            <ul class="about-me">
+                <li>
+                    <p>High School Diploma</p>
+                </li>
+                <li>
+                    <p>Insurance Intermediary Basic Level Certification</p>
+                </li>
+                <li>
+                    <p>Full-stack Web Developement Certification (in progress)</p>
+                </li>
+            </ul>
+            <h2>Hobbies:</h2>
+            <ul class="about-me">
+                <li>
+                    <p>Gaming (every kind, but mostly on PC or phone)</p>
+                </li>
+                <li>
+                    <p>Listening to music</p>
+                </li>
+                <li>
+                    <p>Reading</p>
+                </li>
+                <li>
+                    <p>Walking my dog</p>
+                </li>
+            </ul>
                 <h2>Workplaces:</h2>
                     <table class="about-me table"> 
                         <thead class="section">
@@ -65,65 +142,6 @@
                             </tr>
                         </tbody>
                     </table>
-                <h2>Degrees and Certifications:</h2>
-                    <ul class="about-me">
-                        <li>
-                            <p>High School Diploma</p>
-                        </li>
-                        <li>
-                            <p>Insurance Intermediary Basic Level Certification</p>
-                        </li>
-                        <li>
-                            <p>Full-stack Web Developement Certification (in progress)</p>
-                        </li>
-                    </ul>
-                <h2>Hobbies:</h2>
-                    <ul class="about-me">
-                        <li>
-                            <p>Gaming (every kind, but mostly on PC or phone)</p>
-                        </li>
-                        <li>
-                            <p>Listening to music</p>
-                        </li>
-                        <li>
-                            <p>Reading</p>
-                        </li>
-                        <li>
-                            <p>Walking my dog</p>
-                        </li>
-                    </ul>
-            <h2 >My experience in web development</h2>
-                <table class="about-me table">
-                    <thead class="section">
-                        <tr>
-                            <th scope="col">Skills</th>
-                            <th scope="col">Experience (since)</th>
-                            <th scope="col">Level of Expertise</th>
-                        </tr>
-                    </thead>
-                    <tbody class="section">
-                        <tr>
-                            <td>HTML</td>
-                            <td>2022</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>2022</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>2023</td>
-                            <td>Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>Node.js</td>
-                            <td>2023</td>
-                            <td>Beginner</td>
-                        </tr>
-                    </tbody>
-                </table>
         </div>
         <footer class="page-footer">
             <p class="page-footer__item">Find me on:</p>
@@ -136,5 +154,6 @@
             </nav>
         </footer>
     <!-- <script src="../js/tota11y.min.js"></script> -->
+    <script src="../js/scripts.js"></script>
     </body>
 </html>
