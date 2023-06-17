@@ -35,7 +35,7 @@
             </nav>
             <!-- Navigation on mobile -->
                 <div class="topnav mobile">
-                    <a href="index.html" class="logo">
+                    <a href="../index.html" class="logo">
                         <img src="../images/Logo.png" alt="my logo" aria-hidden="true" class="page-header__item" id="logo-mobile">
                     </a>
                     <div id="myLinks">
@@ -56,25 +56,50 @@
             <p class="page-content__item page-content__contact-item">86836 Klosterlechfeld</p>
             <p class="page-content__item page-content__contact-item">Germany</p>
             <br>
-            <p class="page-content__item page-content__contact-item"><a href="mailto:darkpfeffer97@gmail.com">E-mail: darkpfeffer97@gmail.com</a><br>
-                <a href="tel:+491799505931">Tel: +49 179 9505931</a><br>
-                <a href="mailto:darkpfeffer97@gmail.com">Contact me!</a><br>
+            <p 
+                class="page-content__item page-content__contact-item"
+            >
+                E-mail: 
+                <span>
+                    <a href="mailto:zoltan.borsos.kosi@gmail.com">
+                        zoltan.borsos.kosi<br class="mobile-with-zoom">@gmail.com
+                    </a>
+                </span>
             </p>
+            <p 
+                class="page-content__item page-content__contact-item"
+            >
+                Tel: 
+                    <span>
+                        <a href="tel:+491799505931">
+                            +49 179 9505931
+                        </a>
+                    </span>
+            </p>
+            <a href="mailto:darkpfeffer97@gmail.com" class="page-content__item page-content__contact-item">Contact me!</a><br>
             <br>
-            <h2 id="contact-text">Or contact me here:</h2>
+            <h2 id="contact-text">Or contact me here: (Currently unavailable)</h2>
             <form action="contact" method="post" id="contact-form">
                 <label class="standard-label" for="name">Name:</label><br>
-                <input id="name" required><br>
+                <input id="name" disabled><br>
                 
                 <label class="standard-label" for="contact-email">E-mail:</label><br>
-                <input type="email" id="contact-email" required><br>
+                <input type="email" id="contact-email" disabled><br>
                 
                 <label class="standard-label" for="your-message">Your message:</label><br>
-                <textarea id="your-message" required></textarea><br>
-                <button type="submit" class="submit-button">Submit</button>
+                <textarea id="your-message" disabled></textarea><br>
+                <button type="submit" class="submit-button" disabled>Submit</button>
               </form>
         </div>
         <footer class="page-footer">
+            <a 
+                href="../files/Borsos-Zoltan-Web-Developer-Resume.pdf" 
+                rel="Zoltan Borsos resume" 
+                target="_blank"
+                id="footer-resume"
+            >
+                Open resume
+            </a>
             <p class="page-footer__item">Find me on:</p>
             <nav class="page-footer__item">
                 <a href="https://github.com/Darkpfeffer" target="_blank"><img src="../images/github.svg" alt="Github link and logo" class="link-logo"></a>

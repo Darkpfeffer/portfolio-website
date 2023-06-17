@@ -158,6 +158,14 @@ button:active {
     border-bottom: 3px solid var(--shadow-color);
 }
 
+.mobile-without-zoom {
+    display: inline-block;
+}
+
+.mobile-with-zoom {
+    display: none;
+}
+
 .page-content__picture {
     float: left;
     width: 240px;
@@ -175,6 +183,11 @@ button:active {
 .about-me {
     list-style-type: none;
     text-align: left;
+}
+
+#resume {
+    display: block;
+    text-align: end;
 }
 
 .page-content__contact {
@@ -308,6 +321,14 @@ body {
     margin-top: auto;
 }
 
+#footer-resume {
+    display: block;
+    color: #fff;
+    width: 95px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
 /* Flexbox end */
 
 /* start CSS grid Fallback */
@@ -342,7 +363,36 @@ body {
 
 /* CSS grid end */
 
+/* Table settings*/
+
+table {
+    width: 100%;
+}
+
+.table-category {
+    padding-top: 30px;
+}
+
+.table-mobile {
+    padding-top: 20px;
+    line-height: 10px;
+}
+
+.table-mobile__title {
+    padding-top: 30px;
+}
+
 /* media queries start */
+
+@media all and (max-width: 1350px) {
+    .page-content__work {
+    width: 86%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    }  
+}
 
 @media all and (max-width:750px) {
     body {
@@ -371,6 +421,10 @@ body {
 
     .page-header__item--nav {
         margin-top: 9px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -437,20 +491,13 @@ body {
         padding-right: 1%;
         width: 88%;
     }
-}
 
-@media all and (min-width:500px) and (max-width:650px) {
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 @media all and (max-width:500px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 
     .page-content__picture {
         max-width: 120px;
@@ -469,11 +516,48 @@ body {
     }
 
     .page-content__text {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .page-content__picture {
         width: 100px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    body {
+        margin: 0;
+    }
+
+    .page-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        border: none;
+        width: 100%;
+        text-align: start;
+    }
+
+    .about-me {
+        list-style: none;
+        margin-left: 1px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    li {
+        margin-left: -25px;
+    }
+}
+
+@media all and (max-width: 310px) {
+    .mobile-with-zoom {
+        display: inline-block;
+    }
+
+    .mobile-without-zoom {
+        display: none;
     }
 }
 

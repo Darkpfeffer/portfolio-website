@@ -1,9 +1,11 @@
 /* Add margin at specific device width */
 function deviceWidthChange (event) {
-  if (event.matches) {
-    pageContent.style.marginTop = "125px"
+  for (i=0; i<pageContent.length; i++) {
+    if (event.matches) {
+    pageContent[i].style.marginTop = "75px"
   } else {
-    pageContent.style.marginTop = "175px";
+    pageContent[i].style.marginTop = "125px";
+  }
   }
 }
 
@@ -19,7 +21,7 @@ function myFunction() {
 
   var deviceWidth = window.matchMedia("(max-width: 612px)");
   var x = document.getElementById("myLinks");
-  pageContent = document.querySelector(".page-content");
+  pageContent = document.querySelectorAll(".page-content");
   
   x.style.display = "none";
 
