@@ -158,6 +158,11 @@ button:active {
     border-bottom: 3px solid var(--shadow-color);
 }
 
+.links {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 .mobile-without-zoom {
     display: inline-block;
 }
@@ -186,6 +191,11 @@ button:active {
 }
 
 #resume {
+    display: block;
+    text-align: end;
+}
+
+#mobile-resume {
     display: block;
     text-align: end;
 }
