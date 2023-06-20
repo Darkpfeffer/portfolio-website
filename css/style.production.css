@@ -145,6 +145,7 @@ button:active {
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 125px;
     margin-bottom: 20px;
     text-align: center;
     background-color: #fff;
@@ -155,12 +156,25 @@ button:active {
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
 }
 
+.links {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.mobile-without-zoom {
+    display: inline-block;
+}
+
+.mobile-with-zoom {
+    display: none;
+}
+
 .page-content__picture {
     float: left;
-    min-width: 50px;
-    max-width: 240px;
+    width: 240px;
     height: auto;
     margin-right: 20px;
+    margin-bottom: 10px;
     border-radius: 50%;
 }
 
@@ -172,6 +186,16 @@ button:active {
 .about-me {
     list-style-type: none;
     text-align: left;
+}
+
+#resume {
+    display: block;
+    text-align: end;
+}
+
+#mobile-resume {
+    display: block;
+    text-align: end;
 }
 
 .page-content__contact {
@@ -212,6 +236,9 @@ form {
     max-width: 250px;
 }
 
+.submit-button {
+    margin-bottom: 10px;
+}
 /* Contact form end */
 
 /* Flexbox start */
@@ -238,13 +265,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
-.page-header__item:last-child {
+.page-header__item--nav {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
+    margin-top: 2px;
 }
 
 .navigation-list {
@@ -253,7 +285,7 @@ body {
 
 .navigation-list li {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link-logo {
@@ -269,11 +301,66 @@ body {
     max-height: 70px;
 }
 
+/* Hamburger menu style */
+.mobile {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1c8260;
+    position: relative;
+}
+
+/* Hide links inside navigation menu */
+.topnav #myLinks {
+    display: block;
+}
+
+/* Nav menu links */
+.topnav a {
+    color: #fff;
+    margin-top: 3px;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a:hover {
+    background: #7ad7b7;
+    color: #000;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.topnav a.logo:hover {
+    background: #1c8260;
+}
+
+.topnav a.icon:hover {
+    background: #1c8260;
+}
+
 /* Footer style */
 
 .page-footer {
     text-align: center;
     margin-top: auto;
+}
+
+#footer-resume {
+    display: block;
+    color: #fff;
+    width: 95px;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 /* Flexbox end */
@@ -312,29 +399,35 @@ body {
 
 /* CSS grid end */
 
-/* media queries start */
+/* Table settings*/
 
-@media all and (max-width:500px) {
-    .grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .page-content__picture {
-        max-width: 120px;
-
-    }
+table {
+    width: 100%;
 }
 
-@media all and (min-width:500px) and (max-width:650px) {
-    .grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
+.table-category {
+    padding-top: 30px;
+}
+
+.table-mobile {
+    padding-top: 20px;
+    line-height: 10px;
+}
+
+.table-mobile__title {
+    padding-top: 30px;
+}
+
+/* media queries start */
+
+@media all and (max-width: 1350px) {
+    .page-content__work {
+    width: 86%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    }  
 }
 
 @media all and (max-width:750px) {
@@ -354,8 +447,100 @@ body {
         font-size: 16px;
     }
 
+    .page-content__picture {
+        width: 150px;
+    }
+
     #name, #contact-email, #your-message {
         width: 180px;
+    }
+
+    .page-header__item--nav {
+        margin-top: 9px;
+    }
+
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 612px) {
+    .wide-screen {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
+    }
+
+    .page-content {
+        margin-top: 225px;
+    }
+
+    .page-header {
+        display: block;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topnav a.logo {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+        margin-top: 4px;
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .last-menu__item {   
+        border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .topnav a.active{
+        background: #7ad7b7;
+        color: #000;
+    }
+
+    #logo-mobile {
+        margin: 0;
+        padding: 0;  
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .page-content__text--header {
+        font-size: 18px;
+    }
+
+    .page-content__text {
+        font-size: 12px;
+    }
+
+    .page-content {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 88%;
+    }
+
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width:500px) {
+
+    .page-content__picture {
+        max-width: 120px;
     }
 }
 
@@ -363,12 +548,69 @@ body {
     body {
         font-size: 12px;
     }
+}
 
-    .page-content {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
+@media all and (max-width: 373px) {
+    .page-content__text--header {
+        font-size: 16px;
+    }
+
+    .page-content__text {
+        font-size: 11px;
+    }
+
+    .page-content__picture {
+        width: 100px;
     }
 }
 
+@media all and (max-width: 360px) {
+    body {
+        margin: 0;
+    }
+
+    .page-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        border: none;
+        width: 100%;
+        text-align: start;
+    }
+
+    .about-me {
+        list-style: none;
+        margin-left: 1px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    li {
+        margin-left: -25px;
+    }
+}
+
+@media all and (max-width: 310px) {
+    .mobile-with-zoom {
+        display: inline-block;
+    }
+
+    .mobile-without-zoom {
+        display: none;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .page-content {
+        padding-left: 5px;  
+    }
+    
+    .page-content__picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: none;  
+    }
+}
 /* media queries end */
