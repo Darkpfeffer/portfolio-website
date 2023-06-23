@@ -2,9 +2,9 @@
 function deviceWidthChange (event) {
   for (i=0; i<pageContent.length; i++) {
     if (event.matches) {
-    pageContent[i].style.marginTop = "75px"
+    pageContent[i].style.marginTop = "100px"
   } else {
-    pageContent[i].style.marginTop = "125px";
+    pageContent[i].style.marginTop = "150px";
   }
   }
 }
