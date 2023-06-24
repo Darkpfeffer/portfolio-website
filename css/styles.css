@@ -298,7 +298,7 @@ body {
     width: 70px;
 }
 
-#logo {
+.logo-desktop {
     text-align: left; /* default */
     margin-top: 5px;
     height: 60px;
@@ -531,7 +531,7 @@ table.last-table {
         color: var(--text-color__default);
     }
 
-    #logo-mobile {
+    .logo-mobile {
         margin: 0;
         margin-top: 3px;
         padding: 0;
