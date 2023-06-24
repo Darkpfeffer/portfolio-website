@@ -29,7 +29,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color__default);
-    font-family: 'lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -51,19 +51,19 @@ footer {
 }
 
 h1 {
-    font-family: 'signika negative', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: var(--font-weight__h);
 }
 
 h2 {
-    font-family: 'signika negative', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: var(--font-weight__h);
 }
 
 h3 {
-    font-family: 'signika negative', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: var(--font-weight__h);
 }
@@ -123,6 +123,8 @@ button:active {
 
 .navigation-list__item {
     color: var(--text-color__menu);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 .navigation-list__item:visited {
@@ -135,6 +137,7 @@ button:active {
 
 .navigation-list__item--active {
     text-decoration: none;
+    font-weight: var(--font-weight__h);
 }
 
 .navigation-list__item--active:visited {
@@ -194,6 +197,9 @@ button:active {
 
 #resume {
     display: block;
+    width: 135px;
+    margin-left: auto;
+    margin-right: 10px;
     text-align: end;
 }
 
@@ -209,6 +215,11 @@ button:active {
 .page-content__contact-item {
     text-align: left;
     margin: 0;
+}
+
+h1.page-content__contact-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hide {
@@ -257,6 +268,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    border: none;
 }
 
 .page-header__item--nav {
@@ -281,12 +293,15 @@ body {
     border-radius: 50%;
 }
 
+.page-header__logo {
+    height: 70px;
+    width: 70px;
+}
+
 #logo {
     text-align: left; /* default */
-    min-width: 30px;
-    max-width: 70px;
-    min-height: 30px;
-    max-height: 70px;
+    margin-top: 5px;
+    height: 60px;
 }
 
 /* Hamburger menu style */
@@ -339,12 +354,25 @@ body {
     margin-top: auto;
 }
 
+.page-footer__item {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.page-footer__item--logos {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+}
+
 #footer-resume {
     display: block;
     color: var(--bg-color__content);
-    width: 95px;
+    width: 105px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: 10px;
+    padding-top: 0px;
 }
 
 /* Flexbox end */
@@ -364,7 +392,7 @@ body {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: var(--margin__default);
         margin: 0;
     }
@@ -377,6 +405,10 @@ body {
         padding: 5px;
     }
 
+    .last-grid {
+        margin-bottom: var(--margin__default);
+    }
+
 }
 
 /* CSS grid end */
@@ -384,7 +416,9 @@ body {
 /* Table settings*/
 
 table {
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .table-category {
@@ -400,16 +434,32 @@ table {
     padding-top: 30px;
 }
 
+td {
+    border-bottom: 2px solid var(--shadow-color)
+}
+
+table.last-table {
+    margin-bottom: 20px;
+}
+
 /* media queries start */
 
-@media all and (max-width: 1350px) {
+@media all and (min-width: 1380px) {
+    .page-content {
+        width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media all and (max-width: 950px) {
     .page-content__work {
     width: 86%;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 2%;
     padding-right: 2%;
-    }  
+    } 
 }
 
 @media all and (max-width:750px) {
@@ -439,10 +489,6 @@ table {
 
     .page-header__item--nav {
         margin-top: 9px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -487,9 +533,9 @@ table {
 
     #logo-mobile {
         margin: 0;
-        padding: 0;  
-        width: 45px;
-        height: 45px;
+        margin-top: 3px;
+        padding: 0;
+        height: 40px;
     }
 }
 
@@ -542,7 +588,7 @@ table {
     }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 380px) {
     body {
         margin: 0;
     }
@@ -569,7 +615,7 @@ table {
     }
 }
 
-@media all and (max-width: 310px) {
+@media all and (max-width: 330px) {
     .mobile-with-zoom {
         display: inline-block;
     }
