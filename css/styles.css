@@ -557,7 +557,7 @@ table.last-table {
     }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 585px) {
     .page-content__text--header {
         font-size: 18px;
     }
@@ -646,7 +646,7 @@ table.last-table {
     }
 }
 
-@media all and (max-width: 280px) {
+@media all and (max-width: 285px) {
     .page-content {
         padding-left: 5px;  
     }
