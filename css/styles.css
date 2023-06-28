@@ -312,6 +312,11 @@ body {
     border-radius: 50%;
 }
 
+.linkedin {
+    border-radius: 0%;
+    background: inherit;
+}
+
 .page-header__logo {
     height: 70px;
     width: 70px;
