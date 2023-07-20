@@ -1,203 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My works - Zoltan Borsos</title>
-        <link rel="shortcut icon" href="../images/favicon-32x32.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-        <!-- Load an icon library to show hamburger menu -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.production.css">
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    </head>
-    <body>
-        <header class="page-header">
-            <a href="../index.html" role="tab" class="page-header__item wide-screen page-header__logo"><img src="../images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item wide-screen logo-desktop"></a>
-            <!-- Navigation on wide screens-->
-            <nav class="page-header__item--nav wide-screen">
-                <ul role="tablist" class="navigation-list">
-                    <li role="presentation">
-                        <a href="../index.html" role="tab" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="tab" class="navigation-list__item">About me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="tab" class="navigation-list__item navigation-list__item--active">My works</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="tab" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Navigation on mobile -->
-                <div class="topnav mobile">
-                    <a href="../index.html" class="logo">
-                        <img src="../images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item logo-mobile">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My works - Zoltan Borsos</title>
+    <link rel="shortcut icon" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- Load an icon library to show hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="../index.html" role="tab" class="page-header__item wide-screen page-header__logo"><img
+                src="../images/Logo.svg" alt="my logo" aria-hidden="true"
+                class="page-header__item wide-screen logo-desktop"></a>
+        <!-- Navigation on wide screens-->
+        <nav class="page-header__item--nav wide-screen">
+            <ul role="tablist" class="navigation-list">
+                <li role="presentation">
+                    <a href="../index.html" role="tab" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="tab" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="tab" class="navigation-list__item navigation-list__item--active">My
+                        works</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="tab" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation on mobile -->
+        <div class="topnav mobile">
+            <a href="../index.html" class="logo">
+                <img src="../images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item logo-mobile">
+            </a>
+            <div id="myLinks">
+                <a href="../index.html" role="tab">Home</a>
+                <a href="about.html" role="tab">About me</a>
+                <a href="work.html" role="tab" class="active">My works</a>
+                <a href="contact.html" role="tab" class="last-menu__item">Contact</a>
+            </div>
+            <!-- Hamburger menu to toggle the nav links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="page-content page-content__work">
+        <h1 class="page-content__item page-content__item--header">My works</h1>
+        <div class="grid">
+            <div class="grid__item">
+                <h2>myFlix</h2>
+                <p>
+                    A one-person project where both the server-side and the
+                    client-side of the app were created from scratch.<br>
+                    Users want to be able to access information about movies
+                    so that they can learn more about movies they have watched or
+                    are interested in.
+                </p>
+                <p class="links">
+                    <a href="https://darkpfeffer-myflix.netlify.app" rel="link to myFlix" target="_blank">
+                        Website</a><span class="spacing">,</span>
+                    <a href="https://github.com/Darkpfeffer/myFlix-client" rel="Frontend link to GitHub"
+                        target="_blank">
+                        Frontend GitHub
                     </a>
-                    <div id="myLinks">
-                        <a href="../index.html" role="tab" >Home</a>
-                        <a href="about.html" role="tab">About me</a>
-                        <a href="work.html" role="tab" class="active">My works</a>
-                        <a href="contact.html" role="tab" class="last-menu__item">Contact</a>
-                    </div>
-                    <!-- Hamburger menu to toggle the nav links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-        </header>
-        <div class="page-content page-content__work">
-            <h1 class="page-content__item page-content__item--header">My works</h1>
-            <div class="grid">
-                <div class="grid__item">
-                    <h2>myFlix</h2>
-                    <p>
-                        A one-person project where both the server-side and the
-                        client-side of the app were created from scratch.<br>
-                        Users want to be able to access information about movies 
-                        so that they can learn more about movies they have watched or 
-                        are interested in.
-                    </p>
-                    <p class="links">
-                        <a 
-                            href="https://darkpfeffer-myflix.netlify.app" 
-                            rel="link to myFlix"
-                            target="_blank"
-                        >
-                            Website</a><span class="spacing">,</span>
-                        <a
-                                href="https://github.com/Darkpfeffer/myFlix-client"
-                                rel="Frontend link to GitHub"
-                                target="_blank"
-                            >
-                                Frontend GitHub
-                            </a>
-                    </p>
-                    <p class="links">
-                        <a
-                            href="https://github.com/Darkpfeffer/movie_api"
-                            rel="Backend link to GitHub"
-                            target="_blank"
-                        >
-                            Backend GitHub</a><span class="spacing">,</span> 
-                        <span>
-                            <a 
-                                href="https://darkpfeffer-myflix.netlify.app/case-study"
-                                rel="myFlix case study link"
-                                target="_blank"
-                            >
-                                Case Study
-                            </a>
-                        </span>
-                    </p>
-                </div>
-                <div class="grid__item">
-                    <h2>Wedding Invitation</h2>
-                    <p>
-                        React wedding invitation with music. The first three views are fitting 
-                        on every screen size from mobile to monitor without scrolling.
-                    </p>
-                    <p class="links">
-                        <a 
-                            href="https://kincso-zoltan.netlify.app" 
-                            rel="Wedding invitation"
-                            target="_blank"
-                        >
-                           Website</a><span class="spacing">,</span> 
-                        <span>
-                            <a
-                                href="https://github.com/Darkpfeffer/marriage-invitation"
-                                ref="Wedding invitation GitHub"
-                                target="_blank"
-                            >
-                                GitHub
-                            </a>
-                        </span>
-                    </p>
-                </div>
-                <div class="grid__item last-grid">
-                    <h2>Meet App</h2>
-                    <p>
-                        The application is used to show nearby events to users 
-                        in their chosen cities. A one-person full-stack project, 
-                        with the use of React on the frontend, AWS Lambda as the 
-                        serverless backend API, requesting data through Google 
-                        Calendar API. Developed with Test Driven and 
-                        Behavior-driven approach.
-                    </p>
-                    <p class="links">
-                        <a 
-                            href="https://darkpfeffer.github.io/meet-app/" 
-                            rel="Meet app link"
-                            target="_blank"
-                        >
-                           Website</a><span class="spacing">,</span> 
-                        <span>
-                            <a
-                                href="https://github.com/Darkpfeffer/meet-app/"
-                                ref="Meet app GitHub link"
-                                target="_blank"
-                            >
-                                GitHub
-                            </a>
-                        </span>
-                    </p>
-                    <p class="links">
-                        <a
-                            href="https://darkpfeffer.github.io/meet-app/Screenshot_of_the_app.PNG"
-                            rel="Screenshot of the app"
-                            target="_blank"
-                        >
-                            Screenshot</a>
-                    </p>
-                </div>
-                <div class="grid__item last-grid">
-                    <h2>Pokédex</h2>
-                    <p>
-                        I did this site with the use of an external API.
-                        The content is generated only with JavaScript functions.
-                    </p>
-                    <p class="links">
-                        <a 
-                            href="https://darkpfeffer.github.io/Pokedex/" 
-                            target="_blank" 
-                            rel="Pokédex"
-                        >
-                            Website</a><span class="spacing">,</span> 
+                </p>
+                <p class="links">
+                    <a href="https://github.com/Darkpfeffer/movie_api" rel="Backend link to GitHub" target="_blank">
+                        Backend GitHub</a><span class="spacing">,</span>
                     <span>
-                        <a 
-                            href="https://github.com/Darkpfeffer/Pokedex" 
-                            target="_blank" 
-                            rel="Github link"
-                        >
+                        <a href="https://darkpfeffer-myflix.netlify.app/case-study" rel="myFlix case study link"
+                            target="_blank">
+                            Case Study
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <div class="grid__item">
+                <h2>Wedding Invitation</h2>
+                <p>
+                    React wedding invitation with music. The first three views are fitting
+                    on every screen size from mobile to monitor without scrolling.
+                </p>
+                <p class="links">
+                    <a href="https://kincso-zoltan.netlify.app" rel="Wedding invitation" target="_blank">
+                        Website</a><span class="spacing">,</span>
+                    <span>
+                        <a href="https://github.com/Darkpfeffer/marriage-invitation" ref="Wedding invitation GitHub"
+                            target="_blank">
                             GitHub
                         </a>
                     </span>
-                    </p>
-                </div>
+                </p>
+            </div>
+            <div class="grid__item last-grid">
+                <h2>Meet App</h2>
+                <p>
+                    The application is used to show nearby events to users
+                    in their chosen cities. A one-person full-stack project,
+                    with the use of React on the frontend, AWS Lambda as the
+                    serverless backend API, requesting data through Google
+                    Calendar API. Developed with Test Driven and
+                    Behavior-driven approach.
+                </p>
+                <p class="links">
+                    <a href="https://darkpfeffer.github.io/meet-app/" rel="Meet app link" target="_blank">
+                        Website</a><span class="spacing">,</span>
+                    <span>
+                        <a href="https://github.com/Darkpfeffer/meet-app/" ref="Meet app GitHub link" target="_blank">
+                            GitHub
+                        </a>
+                    </span>
+                </p>
+                <p class="links">
+                    <a href="https://darkpfeffer.github.io/meet-app/Screenshot_of_the_app.PNG"
+                    rel="Screenshot of the app" target="_blank">
+                        Screenshot</a><span class="spacing">,</span>
+                    <a href="https://github.com/Darkpfeffer/meet-app#tools-i-used" rel="Tools used to meet app"
+                    target="_blank">
+                        Tools used
+                    </a>
+                </p>
+            </div>
+            <div class="grid__item last-grid">
+                <h2>Pokédex</h2>
+                <p>
+                    I did this site with the use of an external API.
+                    The content is generated only with JavaScript functions.
+                </p>
+                <p class="links">
+                    <a href="https://darkpfeffer.github.io/Pokedex/" target="_blank" rel="Pokédex">
+                        Website</a><span class="spacing">,</span>
+                    <span>
+                        <a href="https://github.com/Darkpfeffer/Pokedex" target="_blank" rel="Github link">
+                            GitHub
+                        </a>
+                    </span>
+                </p>
             </div>
         </div>
-        <footer class="page-footer">
-            <p class="page-footer__item">Find me on:</p>
-            <nav class="page-footer__item--logos">
-                <a href="https://github.com/Darkpfeffer" target="_blank"><img src="../images/github.svg" alt="Github link and logo" class="link-logo"></a>
-                <a href="https://www.linkedin.com/in/zoltan-borsos/" target="_blank"><img src="../images/linkedin.svg" alt="Linkedin link and logo"  class="link-logo linkedin"></a>
-            </nav>
-            <a 
-                href="../files/Borsos-Zoltan-Web-Developer-Resume.pdf" 
-                rel="Zoltan Borsos resume" 
-                target="_blank"
-                id="footer-resume"
-            >
-                Open resume
-            </a>
-        </footer>
+    </div>
+    <footer class="page-footer">
+        <p class="page-footer__item">Find me on:</p>
+        <nav class="page-footer__item--logos">
+            <a href="https://github.com/Darkpfeffer" target="_blank"><img src="../images/github.svg"
+                    alt="Github link and logo" class="link-logo"></a>
+            <a href="https://www.linkedin.com/in/zoltan-borsos/" target="_blank"><img src="../images/linkedin.svg"
+                    alt="Linkedin link and logo" class="link-logo linkedin"></a>
+        </nav>
+        <a href="../files/Borsos-Zoltan-Web-Developer-Resume.pdf" rel="Zoltan Borsos resume" target="_blank"
+            id="footer-resume">
+            Open resume
+        </a>
+    </footer>
     <!-- <script src="../js/tota11y.min.js"></script> -->
     <script src="../js/scripts.js"></script>
-    </body>
+</body>
+
 </html>
