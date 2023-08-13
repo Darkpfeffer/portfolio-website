@@ -481,6 +481,12 @@ table.last-table {
     }
 }
 
+@media all and (max-width: 1379px) {
+    .work-image {
+        width: 80%;
+    }
+}
+
 @media all and (max-width: 950px) {
     .page-content__work {
     width: 86%;
