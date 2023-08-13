@@ -310,6 +310,8 @@ body {
     height: 30px;
     background: var(--bg-color);
     border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .linkedin {
@@ -425,7 +427,7 @@ body {
         width: auto;
         min-height: auto;
         margin: 5px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .last-grid {
@@ -435,6 +437,10 @@ body {
 }
 
 /* CSS grid end */
+
+.work-image {
+    width: 300px;
+}
 
 /* Table settings*/
 
