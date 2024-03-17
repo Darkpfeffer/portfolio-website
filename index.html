@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home page - Zoltan Borsos</title>
-        <link rel="shortcut icon" href="images/favicon-32x32.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-        <!-- Load an icon library to show hamburger menu -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header class="page-header">
-            <a href="index.html" role="tab" class="page-header__item wide-screen page-header__logo"><img src="images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item wide-screen logo-desktop"></a>
-            <!-- Navigation on wide screens-->
-            <nav class="page-header__item--nav wide-screen">
-                <ul role="tablist" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="tab" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="pages/about.html" role="tab" class="navigation-list__item">About me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="pages/work.html" role="tab" class="navigation-list__item">My works</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="pages/contact.html" role="tab" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Navigation on mobile -->
-                <div class="topnav mobile">
-                    <a href="index.html" class="logo">
-                        <img src="images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item logo-mobile">
-                    </a>
-                    <div id="myLinks">
-                        <a href="index.html" role="tab" class="active">Home</a>
-                        <a href="pages/about.html" role="tab">About me</a>
-                        <a href="pages/work.html" role="tab">My works</a>
-                        <a href="pages/contact.html" role="tab" class="last-menu__item">Contact</a>
-                    </div>
-                    <!-- Hamburger menu to toggle the nav links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-        </header>
-        <div class="page-content">
-            <h1 class="page-content__item page-content__item--header">Home</h1>
-            <img src="images/Picture-of-me.jpeg" alt="Picture of me" class="page-content__picture">
-            <p class="page-content__text">
-                My name is Zoltán Borsos. <br>
-                I am a full-stack Web Developer with skills of consistency, 
-                fast learning, and problem-solving<br>
-                Welcome to my portfolio site!<br>
-            </p>
-            <a href="pages/work.html" class="page-content__text">Check out some of my code!</a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page - Zoltan Borsos</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- Load an icon library to show hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html" role="tab" class="page-header__item wide-screen page-header__logo"><img
+                src="images/Logo.svg" alt="my logo" aria-hidden="true"
+                class="page-header__item wide-screen logo-desktop"></a>
+        <!-- Navigation on wide screens-->
+        <nav class="page-header__item--nav wide-screen">
+            <ul role="tablist" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="tab" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="pages/about.html" role="tab" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="pages/work.html" role="tab" class="navigation-list__item">My works</a>
+                </li>
+                <li role="presentation">
+                    <a href="pages/contact.html" role="tab" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation on mobile -->
+        <div class="topnav mobile">
+            <a href="index.html" class="logo">
+                <img src="images/Logo.svg" alt="my logo" aria-hidden="true" class="page-header__item logo-mobile">
+            </a>
+            <div id="myLinks">
+                <a href="index.html" role="tab" class="active">Home</a>
+                <a href="pages/about.html" role="tab">About me</a>
+                <a href="pages/work.html" role="tab">My works</a>
+                <a href="pages/contact.html" role="tab" class="last-menu__item">Contact</a>
+            </div>
+            <!-- Hamburger menu to toggle the nav links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <footer class="page-footer">
-            <p class="page-footer__item">Find me on:</p>
-            <nav class="page-footer__item--logos">
-                <a href="https://github.com/Darkpfeffer" target="_blank"><img src="images/github.svg" alt="Github link and logo" class="link-logo"></a>
-                <a href="https://www.linkedin.com/in/zoltan-borsos/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin link and logo"  class="link-logo linkedin"></a>
-            </nav>
-            <a 
-                    href="files/Borsos-Zoltan-Web-Developer-Resume.pdf" 
-                    rel="Zoltan Borsos resume" 
-                    target="_blank"
-                    id="footer-resume"
-                >
-                    Open resume
-                </a>
-        </footer>
+    </header>
+    <div class="page-content">
+        <h1 class="page-content__item page-content__item--header">Home</h1>
+        <img src="images/Picture-of-me.jpeg" alt="Picture of me" class="page-content__picture">
+        <p class="page-content__text">
+            My name is Zoltán Borsos-Kósi. <br>
+            I am a Full-Stack Web Developer with consistency, fast learning, and problem-solving skills<br>
+        </p>
+        <a href="pages/work.html" class="page-content__text">Check out some of my code!</a>
+    </div>
+    <footer class="page-footer">
+        <p class="page-footer__item">Find me on:</p>
+        <nav class="page-footer__item--logos">
+            <a href="https://github.com/Darkpfeffer" target="_blank"><img src="images/github.svg"
+                    alt="Github link and logo" class="link-logo"></a>
+            <a href="https://www.linkedin.com/in/zoltan-borsos/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linkedin link and logo" class="link-logo linkedin"></a>
+        </nav>
+        <a href="files/Borsos-Zoltan-Web-Developer-Resume.pdf" rel="Zoltan Borsos resume" target="_blank"
+            id="footer-resume">
+            Open resume
+        </a>
+    </footer>
     <!-- <script src="js/tota11y.min.js"></script> -->
     <script src="js/scripts.js"></script>
-    </body>
+</body>
 </html>
